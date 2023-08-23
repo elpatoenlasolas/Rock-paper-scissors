@@ -1,4 +1,4 @@
 function getComputerChoice() {
-    let computerChoice = Math.round(Math.random() * 10);
+    let computerChoice = Math.floor(Math.random() * 10);
     console.log(computerChoice);
 }
