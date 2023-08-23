@@ -3,5 +3,5 @@ function getComputerChoice() {
     (computerChoice >= 1 && computerChoice <= 3) ? computerChoice = "Rock" :
     (computerChoice >= 4 && computerChoice <= 6) ? computerChoice = "Paper" :
     computerChoice = "Scissors";
-    console.log(computerChoice);
+    return computerChoice;
 }
