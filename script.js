@@ -5,4 +5,3 @@ function getComputerChoice() {
     computerChoice = "Scissors";
     console.log(computerChoice);
 }
-getComputerChoice();
