@@ -5,3 +5,5 @@ function getComputerChoice() {
     computerChoice = "Scissors";
     return computerChoice;
 }
+
+const playerWeapon = prompt('Choose your weapon', 'Rock, Paper or Scissors');
