@@ -32,3 +32,7 @@ let game = (player, computer) => {
         }
     }
 }
+
+function playGame() {
+
+}
