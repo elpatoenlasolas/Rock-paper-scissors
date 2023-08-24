@@ -9,7 +9,7 @@ function getComputerChoice() {
 const playerWeapon = prompt('Choose your weapon', 'Rock, Paper or Scissors');
 const computerWeapon = getComputerChoice();
 
-let playGame = (player, computer) => {
+let game = (player, computer) => {
     if(player == computer) {
         console.log("It's a tie!");
     } else if(player == 'Rock') {
