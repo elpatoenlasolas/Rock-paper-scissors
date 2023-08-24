@@ -6,8 +6,7 @@ function getComputerChoice() {
     return computerChoice;
 }
 
-const playerWeapon = prompt('Choose your weapon', 'Rock, Paper or Scissors').toLowerCase();
-const computerWeapon = getComputerChoice();
+
 
 let game = (player, computer) => {
     if(player == computer) {
@@ -30,11 +29,15 @@ let game = (player, computer) => {
         } else if (computer == "paper") {
             console.log("You won! Scissors beats paper.")
         }
-    }
+    } 
 }
 
 function playGame() {
-    game(playerWeapon, computerWeapon);
+    for(let i = 0; i < 5; i++){
+        const playerWeapon = prompt('Choose your weapon', 'Rock, Paper or Scissors').toLowerCase();
+        const computerWeapon = getComputerChoice();
+        game(playerWeapon, computerWeapon);
+    }
 }
 
 playGame();
