@@ -9,6 +9,6 @@ function getComputerChoice() {
 const playerWeapon = prompt('Choose your weapon', 'Rock, Paper or Scissors');
 const computerWeapon = getComputerChoice();
 
-let playGame = (playerWeapon, computerWeapon) => {
+let playGame = (player, computer) => {
 
 }
