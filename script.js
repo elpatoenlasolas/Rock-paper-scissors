@@ -6,7 +6,9 @@ function getComputerChoice() {
     return computerChoice;
 }
 
-
+let tieCount = 0;
+let userScore = 0;
+let computerScore = 0;
 
 let game = (player, computer) => {
     if(player == computer) {
