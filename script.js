@@ -5,6 +5,7 @@ function getComputerChoice() {
     computerChoice = "scissors";
     return computerChoice;*/
     let computerChoice = "rock";
+    return computerChoice;
 }
 
 let tieCount = 0;
