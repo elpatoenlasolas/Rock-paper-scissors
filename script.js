@@ -12,11 +12,11 @@ let computerScore = 0;
 
 let game = (player, computer) => {
     if(player == computer) {
-        console.log("It's a tie!");
+        document.body.appendChild("<p>It's a tie!<p>");
         tieCount++;
     } else if(player == 'rock') {
         if(computer == 'paper'){
-            console.log("You lose! Paper beats rock.");
+            document.body.appendChild("<p>You lose! Paper beats rock.<p>");
             computerScore++;
         } else if(computer == 'scissors') {
             console.log("You won! Rock beats scissors.");
