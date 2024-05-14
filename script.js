@@ -1,9 +1,10 @@
 function getComputerChoice() {
-    let computerChoice = Math.floor(Math.random() * 9) + 1;
+    /*let computerChoice = Math.floor(Math.random() * 9) + 1;
     (computerChoice >= 1 && computerChoice <= 3) ? computerChoice = "rock" :
     (computerChoice >= 4 && computerChoice <= 6) ? computerChoice = "paper" :
     computerChoice = "scissors";
-    return computerChoice;
+    return computerChoice;*/
+    let computerChoice = "rock";
 }
 
 let tieCount = 0;
