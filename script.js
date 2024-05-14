@@ -14,11 +14,13 @@ let computerScore = 0;
 
 let game = (player, computer) => {
     if(player == computer) {
-        document.body.appendChild("<p>It's a tie!<p>");
+        const para = document.createElement("p");
+        para.textContent = "It's a tie";
+        document.body.appendChild(para);
         tieCount++;
     } else if(player == 'rock') {
         if(computer == 'paper'){
-            document.body.appendChild("<p>You lose! Paper beats rock.<p>");
+            console.log("<p>You lose! Paper beats rock.<p>");
             computerScore++;
         } else if(computer == 'scissors') {
             console.log("You won! Rock beats scissors.");
