@@ -15,6 +15,7 @@ function getComputerChoice() {
 
 let game = (player, computer) => {
     const message = document.getElementById("message");
+    message.innerText = ''; // Clear previous messages
 
     if (player === computer) {
         message.append("It's a tie!");
@@ -44,27 +45,20 @@ let game = (player, computer) => {
             userScore++;
         }
     }
+
+    updateScore();
 }
 
-function playGame() {
-    let message2 = document.getElementById("message-2");
-    let weapons = [rock, paper, scissors];
-
-    for (let i = 0; i < 3; i++) {
-        const playerWeapon = weapons[i];
-        const computerWeapon = getComputerChoice();
-        game(playerWeapon, computerWeapon);
-    }
-
+function updateScore() {
+    const message2 = document.getElementById("message-2");
     message2.innerText = `The score is: User ${userScore} Computer: ${computerScore} Ties: ${tieCount}`;
-    
-    if (userScore > computerScore) {
-        message2.innerText = "You are the master of this game!";
-    } else if (computerScore > userScore) {
-        message2.innerText = "You lose! Better luck next time.";
-    } else {
-        message2.innerText = "It's a draw!";
-    }
 }
 
-playGame();
+function playGame(playerWeapon) {
+    const computerWeapon = getComputerChoice();
+    game(playerWeapon, computerWeapon);
+}
+
+document.getElementById('rock').addEventListener('click', () => playGame(rock));
+document.getElementById('paper').addEventListener('click', () => playGame(paper));
+document.getElementById('scissors').addEventListener('click', () => playGame(scissors));
